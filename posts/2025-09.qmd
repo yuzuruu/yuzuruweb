@@ -2,6 +2,10 @@
 title: "2025年9月の日記"
 date: 2025-09-12
 categories: [日記]
+format:
+  html:
+    code-fold: true
+    code-tools: true
 ---
 
 #    2025年9月12日
@@ -28,6 +32,26 @@ Bettencourt, L. M. A. (2013). The Origins of Scaling in Cities. *Science*, 340(6
 
 アロメトリーを社会経済に応用することに関する論文。名作。精読する必要がある論文。行政界でなく都市圏でとかさまざまなモデル列挙など。とはいえ、都市圏ってどうやってつくるんだろう。ゾーン別恩典など、行政界にもメリットがあるような気がする。
 
+## 日記をスマホから更新する方法
+
+1. [直行リンク](https://github.com/yuzuruu/yuzuruweb/new/yuzuru/posts/)を開く
+2. posts/YYYY-MM-DD-title.qmd を作成
+3. これを貼って3行だけ書く→Commit
+
+```
+---
+title: "小さな進捗メモ"
+date: 2025-09-12
+categories: [日記]
+---
+- **今日の1行**：
+- **学んだこと/気づき**：
+- **次にやる1つ**：
+```
+
+Actionsが自動でビルドして公開反映。大学におくやつは後日アップロード。
+
+
 ## 明日すること
 
 1. 研究室掃除と買い物支援。
@@ -38,4 +62,3 @@ Bettencourt, L. M. A. (2013). The Origins of Scaling in Cities. *Science*, 340(6
 <!-- - **今日の1行**： -->
 <!-- - **学んだこと/気づき**： -->
 <!-- - **次にやる1つ**： -->
-## Github設定虎の巻
