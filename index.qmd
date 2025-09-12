@@ -1,0 +1,163 @@
+---
+title: "宇都宮研究室へようこそ"
+subtitle: "Inclusive Mobility / Spatial Econometrics / Socio-ecological Systems"
+lang: ja
+description: "研究紹介・論文・メンバー・お知らせ"
+image: assets/banner.jpg          # 共有用サムネイル
+favicon: assets/kosho_symbol.png  # タブのロゴ
+resources: 
+  - assets/banner.jpg
+  - assets/kosho_symbol.png
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: slate
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    self-contained: true           # サーバー反映でCSSが効かない問題の回避に有効
+    anchor-sections: false
+    link-external-newwindow: true
+    title-block-banner: assets/banner.jpg  # 上部バナーに画像を使用
+
+execute:
+  echo: false
+---
+
+```{=html}
+<!-- ちいさな追加スタイル（self-containedで埋め込み） -->
+<style>
+/* 見出しの余白と太さ */
+h1, h2, h3 { letter-spacing: .02em; }
+.section-lead { font-size: 1.1rem; opacity:.9; }
+
+/* カードの見た目 */
+.card { border: 0; border-radius: 1rem; }
+.card:hover { transform: translateY(-2px); transition: .2s ease-in-out; }
+.card .card-body { padding: 1.25rem 1.25rem; }
+
+/* ヒーロー帯の上で文字の視認性を少し上げる */
+.quarto-title-block .quarto-title-banner {
+  background-position: center; background-size: cover;
+}
+.quarto-title .title, .quarto-title .subtitle {
+  text-shadow: 0 1px 12px rgba(0,0,0,.25);
+}
+
+/* セクションの上下余白 */
+section { scroll-margin-top: 80px; }
+.section-pad { padding: 2rem 0; }
+@media (min-width: 992px) {
+  .section-pad { padding: 3.5rem 0; }
+}
+
+/* フッター */
+.site-footer { font-size: .95rem; opacity: .85; }
+</style>
+```
+
+# 👋 概要
+
+::: section-lead
+宇都宮研究室は、<strong>インクルーシブ・モビリティ</strong>、<strong>空間計量</strong>、<strong>社会‐生態システム</strong>を横断する研究に取り組んでいます。以下の導線から詳細をご覧ください。
+:::
+
+<!-- ::::::: section-pad -->
+<!-- :::::: {.row .g-3} -->
+<!-- ::: {.col-12 .col-md-4} -->
+<!-- ```          -->
+<!-- <div class="card h-100 shadow-sm"> -->
+<!--   <div class="card-body"> -->
+<!--     <h3 class="h5 mb-2">研究の柱</h3> -->
+<!--     <p class="mb-3">歩行者・車椅子ユーザの移動、空間自己相関を考慮したベイズ推定、東南アジアを中心とした食文化とリスク行動など。</p> -->
+<!--     <a class="btn btn-primary btn-sm" href="#research">詳しく見る</a> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- ``` -->
+<!-- ::: -->
+
+<!-- ::: {.col-12 .col-md-4} -->
+<!-- ```          -->
+<!-- <div class="card h-100 shadow-sm"> -->
+<!--   <div class="card-body"> -->
+<!--     <h3 class="h5 mb-2">論文・データ</h3> -->
+<!--     <p class="mb-3">査読論文、プレプリント、再現可能なコード・データ公開のリンク集。</p> -->
+<!--     <a class="btn btn-primary btn-sm" href="#publications">一覧へ</a> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- ``` -->
+<!-- ::: -->
+
+<!-- ::: {.col-12 .col-md-4} -->
+<!-- ```          -->
+<!-- <div class="card h-100 shadow-sm"> -->
+<!--   <div class="card-body"> -->
+<!--     <h3 class="h5 mb-2">参加・見学</h3> -->
+<!--     <p class="mb-3">セミナー・ジャーナルクラブ、研究室見学、共同研究のご案内。</p> -->
+<!--     <a class="btn btn-primary btn-sm" href="#join">参加方法</a> -->
+<!--   </div> -->
+<!-- </div> -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::::: -->
+<!-- ::::::: -->
+
+## 📰 お知らせ {#news}
+
+-   2025-09-12　新サイト試験公開。レイアウトのフィードバック歓迎です。
+<!-- -   2025-08-20 データセット <em>Inclusive Mobility in Chiang Mai</em> を公開。 -->
+<!-- -   2025-07-28 学会発表スライドを更新。 -->
+
+
+## ゼミナール案内
+
+[宇都宮研究室へようこそ](https://www.econ.nagasaki-u.ac.jp/staff/yuzuru/seminar/introduction_to_yuzurulab.html)
+
+
+## 🔬 研究トピック {#research}
+
+研究室の最近の主題は次の3つです。
+
+<!-- -   **Inclusive Mobility**：歩行者／車椅子移動の速度・障害物・空間的不均衡\ -->
+<!-- -   **Spatial Econometrics**：ICAR/SAR 等の空間構造をもつベイズモデルの応用\ -->
+<!-- -   **Socio-ecological Systems**：メコン下流域の食文化とリスク回避行動 -->
+
+::: callout-tip
+**方法論の特徴**：Stan（cmdstanr）による階層ベイズ、欠測値の同時推定、LOO比較、空間ラグ／誤差の実装など統計学的知見と地べたを這って集めた知見を組み合わせるのです。
+:::
+
+## 📚 論文・データ・コード {#publications}
+
+[researchmap](https://researchmap.jp/yuzuruu)
+[Github](https://github.com/yuzuruu)
+
+
+## 👥 メンバー {#people}
+
+-   教員：宇都宮 譲（Ph.D.）\
+-   学生・協力研究者：準備中
+
+## 🧭 参加・見学 {#join}
+
+-   ジャーナルクラブ（労務管理・HRM）：月1回／オンライン併用\
+-   データ演習（R / Quarto / Stan）：不定期\
+-   見学・共同研究の相談はメールにてご連絡ください。
+
+## 📍 アクセス {#access}
+
+長崎大学経済学部\
+4-2-1 Katafuchi, Nagasaki, Japan\
+E-mail: [yuzuru@nagasaki-u.ac.jp]{#contact}
+
+------------------------------------------------------------------------
+
+::::: {.site-footer .d-flex .justify-content-between .align-items-center .py-3}
+<div>
+
+© 2025 Yuzurulab
+
+</div>
+
+:::::

@@ -1,0 +1,13 @@
+---
+title: "日記"
+page-layout: article
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  date-format: "YYYY-MM-DD"
+  page-size: 10
+---
+
+<!-- ここでは研究メモや雑感を日付順に掲載します。各エントリは `posts/` フォルダに `.qmd` で追加してください。 -->

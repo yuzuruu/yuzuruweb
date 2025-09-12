@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd        # ← これが無いと index.html は出ません
+    - diary.qmd
+    - posts/**/*.qmd
+
+website:
+  title: "宇都宮研究室"
+  navbar:
+    left:
+      - text: ホーム
+        href: index.qmd
+      - text: 日記
+        href: diary.qmd
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: slate
+    self-contained: true
+
+resources:
+  - assets/**

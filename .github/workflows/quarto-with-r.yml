@@ -1,0 +1,47 @@
+name: Quarto Publish (with R)
+
+on:
+  push:
+    branches: [ yuzuru ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 同一ブランチでの並行実行を自動キャンセル
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      # renv.lock がある場合のみ自動で復元
+      - name: Setup renv (if renv.lock present)
+        if: hashFiles('renv.lock') != ''
+        uses: r-lib/actions/setup-renv@v2
+
+      # renv.lock が無い最小構成。必要に応じてパッケージを追加
+      - name: Install minimal R packages (if no renv.lock)
+        if: hashFiles('renv.lock') == ''
+        run: Rscript -e 'install.packages(c("knitr","rmarkdown"))'
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render site
+        run: quarto render
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
