@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+
+_site/
+site_libs/
+.quarto/
+*.utf8.md
+.DS_Store
+
+.Rproj.user/
+.Rhistory
+.RData
+renv/library/

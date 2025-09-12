@@ -5,16 +5,25 @@ project:
     - index.qmd        # ← これが無いと index.html は出ません
     - diary.qmd
     - posts/**/*.qmd
+    - seminar/**/*.qmd     # ← 追加
+
 
 website:
-  title: "宇都宮研究室"
+  sidebar:
+      - id: lab               # ← ページ側の 'sidebar: lab' と対応
+        title: "研究室案内"
+        contents:
+          - seminar/labguide.qmd
+          - seminar/visit.qmd
+          - seminar/rubric.qmd
   navbar:
     left:
       - text: ホーム
         href: index.qmd
       - text: 日記
         href: diary.qmd
-
+      - text: 宇都宮研究室へようこそ
+        href: seminar/labguide.qmd
 format:
   html:
     theme:

@@ -1,8 +1,8 @@
 ---
 title: "宇都宮研究室へようこそ"
-subtitle: "Inclusive Mobility / Spatial Econometrics / Socio-ecological Systems"
+subtitle: "Management by Visualizing the Invisible Stock of Human Resources / Inclusive Mobility / Socio-ecological Systems"
 lang: ja
-description: "研究紹介・論文・メンバー・お知らせ"
+# description: "研究紹介・論文・メンバー・お知らせ"
 image: assets/banner.jpg          # 共有用サムネイル
 favicon: assets/kosho_symbol.png  # タブのロゴ
 resources: 
@@ -25,6 +25,14 @@ format:
 execute:
   echo: false
 ---
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 
 ```{=html}
 <!-- ちいさな追加スタイル（self-containedで埋め込み） -->
@@ -61,7 +69,7 @@ section { scroll-margin-top: 80px; }
 # 👋 概要
 
 ::: section-lead
-宇都宮研究室は、<strong>インクルーシブ・モビリティ</strong>、<strong>空間計量</strong>、<strong>社会‐生態システム</strong>を横断する研究に取り組んでいます。以下の導線から詳細をご覧ください。
+宇都宮研究室は、<strong>インクルーシブ・モビリティ</strong>、<strong>衛星画像情報を用いた人的資源量推定</strong>、<strong>社会‐生態システム</strong>を横断する研究に取り組んでいます。
 :::
 
 <!-- ::::::: section-pad -->
@@ -110,23 +118,33 @@ section { scroll-margin-top: 80px; }
 <!-- -   2025-08-20 データセット <em>Inclusive Mobility in Chiang Mai</em> を公開。 -->
 <!-- -   2025-07-28 学会発表スライドを更新。 -->
 
+## 学術業績
+
+[Researchmap](https://researchmap.jp/yuzuruu)参照。
 
 ## ゼミナール案内
 
-[宇都宮研究室へようこそ](https://www.econ.nagasaki-u.ac.jp/staff/yuzuru/seminar/introduction_to_yuzurulab.html)
+[宇都宮研究室へようこそ](seminar/introduction_to_yuzurulab.html)
 
 
 ## 🔬 研究トピック {#research}
 
 研究室の最近の主題は次の3つです。
 
-<!-- -   **Inclusive Mobility**：歩行者／車椅子移動の速度・障害物・空間的不均衡\ -->
-<!-- -   **Spatial Econometrics**：ICAR/SAR 等の空間構造をもつベイズモデルの応用\ -->
-<!-- -   **Socio-ecological Systems**：メコン下流域の食文化とリスク回避行動 -->
++ 造船業における作業と熟練その他いろいろ (@fig-itago)：若くないとできなかった研究。若かったワタクシを受け入れてくださった方々に記して謝意を表します。
++ 衛星情報を用いた人的資源量推定：人的資源は、ある地域に分布する働けそうな人々の数。たのしい統計的推論とたのしい現地調査@タイとを組み合わせるたのしい研究。35,000歩/日歩く。暑い。2kg/日痩せます。調査が終わればリバウンド。ห้องน้ำอยู่ที่ไหนครับ。
++ ベトナムおよびカンボジアにおける生態系サービス推定：水産学部と環境科学部と共同研究。淡水フグはおいしいよ。
+    - その他色々：車椅子にGPSとカメラを取り付けて、車椅子観光客を阻むものはなにで、どう移動に影響するか解明してます。意外な結果を得て、これはまたびっくり。
 
 ::: callout-tip
-**方法論の特徴**：Stan（cmdstanr）による階層ベイズ、欠測値の同時推定、LOO比較、空間ラグ／誤差の実装など統計学的知見と地べたを這って集めた知見を組み合わせるのです。
+**方法論の特徴**：RとStan（cmdstanr）による階層ベイズ、空間ラグ／誤差の実装など統計学的知見と、地べたを這って集めたデータを組み合わせるのです（@fig-navanakorn）。
 :::
+
+```{r navanakorn, echo=FALSE, fig.align = "center", out.width='20%'}
+#| label: fig-navanakorn
+#| fig-cap: "2025年2月ナワナコン工業団地にて。ひたすら歩き回って35,000歩。今日も元気だお水がうまい。"
+knitr::include_graphics("assets/navanakorn.jpg")
+```
 
 ## 📚 論文・データ・コード {#publications}
 
@@ -137,7 +155,7 @@ section { scroll-margin-top: 80px; }
 ## 👥 メンバー {#people}
 
 -   教員：宇都宮 譲（Ph.D.）\
--   学生・協力研究者：準備中
+-   学生・協力研究者：
 
 ## 🧭 参加・見学 {#join}
 
@@ -151,12 +169,25 @@ section { scroll-margin-top: 80px; }
 4-2-1 Katafuchi, Nagasaki, Japan\
 E-mail: [yuzuru@nagasaki-u.ac.jp]{#contact}
 
+
+## 予定
+
+<style>
+  .calendar-embed { width:100%; height:85vh; border:0; }
+  @media (max-width: 768px){ .calendar-embed{ height:70vh; } }
+</style>
+<div class="my-4">
+  <iframe class="calendar-embed" src="https://outlook.office365.com/owa/calendar/51896bf96d77433398ee15cc9b3fbef6@nagasaki-u.ac.jp/8659510011f748b58f1a5a84ecd768907175623422547927765/calendar.html" loading="lazy" referrerpolicy="no-referrer" title="Outlook Calendar"></iframe>
+</div>
+
+
+
 ------------------------------------------------------------------------
 
 ::::: {.site-footer .d-flex .justify-content-between .align-items-center .py-3}
 <div>
 
-© 2025 Yuzurulab
+(c) 2025 Yuzurulab
 
 </div>
 

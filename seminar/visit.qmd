@@ -1,0 +1,37 @@
+---
+title: "研究室見学のご案内"
+output-file: visit            # → _site/seminar/visit.html
+page-layout: article
+sidebar: lab                  # _quarto.yml 側で sidebar: id=lab を定義します
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: false
+---
+
+
+## 申込方法（いずれか）
+
+### 1) メールで申し込み
+- 件名：**【見学申込】氏名・学年**
+- 本文：希望日時（第1〜第3希望）、簡単な関心領域や本研究室を志望される理由を書いてください。簡単で結構です。  
+- 宛先：**yuzuru@nagasaki-u.ac.jp**
+
+[メールを作成する](mailto:yuzuru@nagasaki-u.ac.jp?subject=%E3%80%90%E8%A6%8B%E5%AD%A6%E7%94%B3%E8%BE%BC%E3%80%91%E6%B0%8F%E5%90%8D%E3%83%BB%E5%AD%A6%E5%B9%B4){.btn .btn-primary}
+
+### 2) フォームで申し込み（推奨）
+大学アカウント限定の **MSフォーム**です。
+
+[フォーム（学内限定）を開く](https://forms.office.com/r/p3XRnQDgvr)
+
+
+## 面談の流れ
+1. 希望日時をいただいた後、**30分以内にて終わる面談**を設定します。場所は研究室（東南アジア研究所）です。  
+2. 内容はゼミの進め方・研究関心の確認。質疑応答です。あらかじめ手引きをよく読んでおいてください。  
+
+
+
+**関連**：
+- [評価ルーブリック](rubric.qmd)
+- [研究室トップ](labguide.qmd)
